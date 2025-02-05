@@ -4,7 +4,7 @@ library(ape)
 #devtools::install_github("daijiang/rtrees")
 #library(rtrees)
 
-tree <- read.nexus(here("Figures", "Phylogeny", "MamPhy_fullPosterior_BDvr_Completed_5911sp_topoCons_NDexp_MCC_v2_target.tre"))
+tree <- read.nexus(here("Figures", "data", "MamPhy_fullPosterior_BDvr_Completed_5911sp_topoCons_NDexp_MCC_v2_target.tre"))
 
 # Mammals
 ## Assemble an ordinal tree
@@ -20,8 +20,8 @@ write.tree(tree2, here("Figures", "Phylogeny", "MamPhy_orders.tre"))
 
 #Birds
 ##Assemble an ordinal tree
-load(here("Figures", "Phylogeny", "tree_bird_ericson.rda"))
-tax <- read.csv( here("Figures", "Phylogeny", "BLIOCPhyloMasterTax.csv"))
+load(here("Figures", "data", "tree_bird_ericson.rda"))
+tax <- read.csv( here("Figures", "data", "BLIOCPhyloMasterTax.csv"))
 tspecies <- tax[!duplicated(tax$IOCOrder),]
 tspecies$Scientific <- sub(" ", "_", tspecies$Scientific)
 all(tspecies$Scientific %in% tree_bird_ericson$tip.label) #check all species are in the dataset
