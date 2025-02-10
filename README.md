@@ -2,6 +2,9 @@
 
 The **Animal Culture Database (ACDB)** is a comparative database of cultural behaviors across nonhuman animal species. It synthesizes current literature on intra-species behavioral variation in contexts such as communication, foraging, and migration into a relational database. The latest version of the database can be accessed through an open-access [Shiny app](https://github.com/datadiversitylab/ACDB). In this repo, we store the relational databases associated to the ACDB.
 
+## Files
+ACDB_sqlite_build.R is primarily for illustrative purposes. It contains the code used to build the database from the csv files. If you would like to access the data, you can look at the individual tables in table_csvs or download the current database as ACDB_v01.sql. 
+
 ## Table structures
 
 Below we provide an overview of the tables and their respective columns in the SQLite database used for the **Animal Culture Database (ACDB)**. 
