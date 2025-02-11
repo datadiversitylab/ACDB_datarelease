@@ -2,8 +2,9 @@ library(DBI)
 library(RSQLite)
 library(dplyr)
 library(readr)
+library(here)
 #open database connection----
-ACDB_v01 <- dbConnect(RSQLite::SQLite(), "/Users/kiranbasava/DDL/ACDB/nsdata_scripts/ACDB_v01.sql")
+ACDB_v01 <- dbConnect(RSQLite::SQLite(), here("ACDB_v01.sql"))
 
 dbListTables(ACDB_v01)
 
