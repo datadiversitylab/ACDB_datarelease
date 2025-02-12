@@ -75,11 +75,11 @@ Below we provide an overview of the tables and their respective columns in the S
 
 ## Contribution guidelines
 
-We welcome contributions from researchers to expand and update the database. Please see the [Contribution Guidelines](CONTRIBUTING) for instructions on how to submit your data.
+We welcome contributions from researchers to expand and update the database. Please see the [Contribution Guidelines](CONTRIBUTING.md) for instructions on how to submit your data.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE.md).
 
 ## Contact
 
