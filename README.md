@@ -18,7 +18,7 @@ Below we provide an overview of the tables and their respective columns in the S
      - `GBIF`: Global Biodiversity Information Facility (GBIF) identifier.
      - `canonicalName`: Canonical name from GBIF API.
      - `Species`, `Genus`, `Family`, `Ordr`, `Class`, `Phylum`: Taxonomic hierarchy from GBIF backbone.
-     - `primary_social_unit`: Primary social unit type (e.g., group size).
+     - `primary_social_unit`: The largest social unit for this species in which individuals maintain stable membership, adapted from Prox & Farine 2020 and Groot et al. 2023. Individual (no stable association with conspecifics); pair (two individuals, presumably mating pair); family (unit is composed of related individuals); group (unit includes unrelated individuals, may display fission-fusion behavior)
      - `unit_evidence`, `unit_source`: Evidence and sources.
      - `IUCN`: Conservation status code from the IUCN Red List.
 
