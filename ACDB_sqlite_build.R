@@ -18,7 +18,8 @@ dbExecute(ACDB_v01, "CREATE TABLE sources (
   title TEXT,
   year INTEGER,
   authors TEXT,
-  doi TEXT
+  doi TEXT,
+  methods TEXT
 );")
 
 sources <- read.csv("/Users/kiranbasava/DDL/ACDB/nsdata_scripts/table_csvs/sources_jan23.25.csv", stringsAsFactors = FALSE)
@@ -168,6 +169,7 @@ dbExecute(ACDB_v01,
 dbWriteTable(ACDB_v01, "behaviors", behaviors, append = TRUE)
 View(dbGetQuery(ACDB_v01, "SELECT * FROM behaviors ;"))
 dbGetQuery(ACDB_v01, "PRAGMA table_info([behaviors]);")  #make sure behavior_id primary key
+
 
 #disconnect----
 dbDisconnect(ACDB_v01)
