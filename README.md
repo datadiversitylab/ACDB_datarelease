@@ -1,7 +1,7 @@
 # Animal Culture Database (ACDB) – database release
 
 The **Animal Culture Database (ACDB)** is a comparative database of cultural behaviors across nonhuman animal species. It synthesizes current literature on intra-species behavioral variation in contexts such as communication, foraging, and migration into a relational database. 
-This repo contains the static release associated with the article 'Mapping nonhuman cultures with the Animal Culture Database' (https://www.nature.com/articles/s41597-025-05315-y). The latest version of the database can be accessed through an open-access [Shiny app](https://datadiversitylab.github.io/ACDB/) and in the [database repository] (https://github.com/datadiversitylab/ACDB).
+This repo contains the static release associated with the article 'Mapping nonhuman cultures with the Animal Culture Database' (https://www.nature.com/articles/s41597-025-05315-y). The latest version of the database can be accessed through an open-access [Shiny app](https://datadiversitylab.github.io/ACDB/) and in the [database repository](https://github.com/datadiversitylab/ACDB).
 
 ## Files
 ACDB_sqlite_build.R is primarily for illustrative purposes. It contains the code used to build the database from the csv files. If you would like to access the data, you can look at the individual tables in table_csvs or download the current database as ACDB_v01.sql. The example_queries.R script can also be used to load the SQLite database in R and run example queries on the tables. 
